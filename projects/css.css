@@ -1,0 +1,32 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: bisque;
+}
+
+header {
+    background-color: rgb(168, 179, 179);
+}
+
+h2 {
+    color: rgb(27, 107, 58);
+}
+
+.fav {
+    background-color: rgb(241, 255, 240);
+}
+
+p {
+    color: rgb(73, 34, 34);
+}
+
+.emp {
+    color: rgb(39, 147, 62);
+}
+
+.emp2 {
+    color: rgb(39, 147, 62);;
+}
+
+h3 {
+    color: rgb(73, 34, 34);
+}
