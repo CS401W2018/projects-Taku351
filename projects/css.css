@@ -1,5 +1,5 @@
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: bisque;
 }
 
@@ -13,6 +13,14 @@ h2 {
 
 .fav {
     background-color: rgb(241, 255, 240);
+}
+
+#f1 {
+    color: #895129;
+}
+
+#f2 {
+    color: #895129;
 }
 
 p {
