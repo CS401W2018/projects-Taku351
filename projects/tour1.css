@@ -1,0 +1,33 @@
+body {
+    background: url(JBGP.jpg);
+    
+}
+
+header {
+    background: url('JF.png') top right no-repeat;
+}
+
+h1 {
+    color: bisque;
+}
+
+h2 {
+    color: bisque;
+}
+
+h3 {
+    color: bisque;
+}
+
+.mylist {
+    color: aliceblue;
+    list-style-image: url(JList2.png);
+}
+
+p {
+    color: aliceblue;
+}
+
+nav {
+    color: azure;
+}
