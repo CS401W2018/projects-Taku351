@@ -10,6 +10,12 @@ header {
    width: 80%;
    overflow: visible;
 }
+.Tokyo {
+    width: 100px;
+    border: thin solid black
+    /*text-align: center
+    margin: 10px auto;*/
+}
 
 header h1 {
     border: 5px dotted #000;
