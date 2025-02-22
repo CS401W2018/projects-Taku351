@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(AIbg3.jpg);
+}
+
+.Title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 250%;
+    border: dotted;
+}
+
+nav a {
+   
+    background-color: azure;
+    padding: 5px 24px;
+    margin: auto;
+}
+
+.floating {
+    float: left;
+    background-color: aliceblue;
+    padding: 10px 5px;
+}
+
+#wrapper {
+    background-color: #000;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.Df {
+    background-color: rgb(58, 103, 142);
+    padding: 10px 75px;
+    width: 130px;
+    
+}
+
+.AIic {
+    float: right ;
+    margin-bottom: 10 ;
+}
+
+#Cover {
+    width: 500;
+    margin: auto;
+}
+
+.clear {
+    color: aliceblue;
+    clear: both;
+}
+
+p {
+    color: aliceblue;
+}
+
+h1 {
+    text-align: center;
+    color: aliceblue;
+    background-color: rgb(52, 116, 156);
+    border: dot thin solid ;
+    box-shadow: 3px 3px 3px rgba(30, 30, 30, 5);
+}
+
+h2{
+    color: aliceblue;
+}
+
+footer {
+    align-items: right;
+}
+
+.Click {
+    color: bisque;
+    
+}
