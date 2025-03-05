@@ -59,7 +59,7 @@ main {
 @media ONLY screen AND (max-width: 900px){
     .row {
         flex-direction: column;
-        allign-item: center;
+        align-items: center;
     }
 
     .card {
