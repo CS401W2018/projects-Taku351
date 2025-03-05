@@ -33,7 +33,7 @@ nav a:hover {
 
 .row {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -54,4 +54,31 @@ main {
 
 .card img {
     width: 100%;
+}
+
+@media ONLY screen AND (max-width: 900px){
+    .row {
+        flex-direction: column;
+        allign-item: center;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .feature {
+        order: -1;
+    }
+}
+
+@media ONLY screen AND (max-width: 700px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        border-bottom: thin solid #fff
+    }
+
+
 }
