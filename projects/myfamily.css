@@ -47,7 +47,7 @@ aside {
     background: #ddd;
     padding: 15px;
     box-shadow: 2px 2px 10px, rgb(0, 0, 0, 0.1);
-    text-align: center;
+    text-align: left;
     border-radius: 5px;
 }
 
@@ -55,14 +55,13 @@ aside ul {
     width: 90%;
     vertical-align: middle;
     background: #ddd;
-    padding: 15px; 
+    padding: 0px; 
     list-style-position: inside;
 }
 
 aside ul li{
     margin: 5px, 0;
     font-size: 15px;
-    text-align: center;
 }
 
 
@@ -83,6 +82,8 @@ article {
     flex: 1;
     background: #f9f9f9;
     padding: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px;
     text-align: center;
 }
 
@@ -109,6 +110,7 @@ footer {
         width: 100%;
         text-align: left;
         padding: 0;
+        display: block;
     }
 
     nav ul li a {
@@ -124,8 +126,8 @@ footer {
 
     aside {
         flex-direction: column;
-        width: 50%;
-        text-align: center;
+        width: 100%;
+        text-align: left;
         padding: 10px;
         font-size: 20px;
     }
