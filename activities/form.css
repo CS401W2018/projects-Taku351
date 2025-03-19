@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+fieldset {
+    background-color: rgb(255, 189, 127);
+}
+
+legend {
+    background-color: rgb(218, 157, 71);
+    color: beige;
+    padding: 20px;
+}
+
+.form-row input:not([type="submit"]){
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #777;
+}
+
+.form-row input:not([type="submit"]):focus {
+    background-color: #fff;
+}
+
+.form-row input[type = "submit"]{
+    padding: 10px;
+    background-color: #777;
+    color: white;
+    font-size: 24px;
+}
+
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.radio.row {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.form-row label{
+    width: 150px;
+    text-align: right;
+}
+
+.form-spacer {
+    width: 150px;
+    text-align: right;
+}
+
+@media ONLY screen and (max-width: 600px) {
+    .form-row {
+        text-align: left;
+    }
+
+    .form-row label {
+        text-align: left;
+    }
+
+    .form-spacer {
+        text-align: left;
+    }
+}
+
