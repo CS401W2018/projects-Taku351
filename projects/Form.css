@@ -7,17 +7,19 @@ body {
 
 header {
     background-color: rgb(236, 243, 245);
-    color: #000;
+    color: #060505;
     padding: 30px;
     text-align: center;
     font-size: 3em;
+    font-style: oblique;
 }
 
 footer {
     background-color: #fff;
-    color: #000;
+    color: #2c1588;
+    font-style: inherit;
     padding: 5px;
-    text-align: left;
+    text-align: center;
     font-size: 1em;
     position: none;
     bottom: 0;
