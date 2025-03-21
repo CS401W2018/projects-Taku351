@@ -43,7 +43,7 @@ form {
 .form-row {
     margin: 10px;
     flex: 1 1 45%;
-    min-width: 200%
+    min-width: 140%
 }
 
 label {
@@ -59,8 +59,8 @@ input [type="date"],
 input [type="tel"],
 textarea,
 select {
-    width: 50%;
-    padding: 8%;
+    width: 200px;
+    padding: 25px;
     margin-bottom: 10px;
     border: 2px solid #ccc;
     border-radius: 4px;
@@ -80,7 +80,7 @@ select {
 fieldset {
     border: 2px solid #246474;
     border-radius: 4px;
-    padding: 10px;
+    padding: 0px;
     width: 100%;
 }
 
