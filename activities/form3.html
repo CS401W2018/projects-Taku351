@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form3.css">
+</head>
+<body>
+    <header>Web Design</header>
+    <main>
+        <form action="processing.html" method="get" id="myForm">
+            <fieldset>
+                <legend>Account Info</legend>
+                <div class="form-row">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" name="full Name" placeholder="Full name" id="full Name">
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input type="password" name="password" id="pass">
+                </div>
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state">
+                        <option value="blank">blank</option>
+                        <option value="CO">CO</option>
+                        <option value="HI">HI</option>
+                        <option value="UT">UT</option>
+                    </select>
+                </div>
+                <div class="radio-row">
+                    <div class="form-spacer">Year in School:</div>
+                    <label><input type="radio" name="Year" value="Freshman">Freshman</label>
+                    <label><input type="radio" name="year" value="Sophmore" checked>Sophmore</label>
+                </div>
+                <div class="radio-row">
+                    <div class="form-spacer"></div>
+                    <label><input type="checkbox" name="agree" id="agree" checked>Remember Me</label>
+                </div>
+                <div class="form-row">
+                    <label for="comments">comments:</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-spacer"></div>
+                    <input type="submit">
+                </div>
+            </fieldset>
+        </form>
+    <hr>
+        <h2>Engagement</h2>
+        <h3>What is JavaScript? How did it get its name?</h3>
+        <p>JavaScript makes websites interactive, and it was named to sound like Java, but they are not the same.</p>
+        <h3>What are the two ways you can run JavaScript?</h3>
+        <p>We can run JavaScript in a web browser or in the terminal using Node.js.</p>
+        <h3>What was the most popular front-end js library?</h3>
+        <p>The most popular front-end JavaScript library was jQuery because it made websites easier to build and use.</p>
+        <h3>What is the most popular front-end js library today?</h3>
+        <p>The most popular front-end JavaScript library today is React.</p>
+    </main>
+    <footer>
+        <p>&copy; 2025 Takuto Yamashiro</p>
+    </footer>
+    <script>
+        document.getElementById ('myForm').addEventListener('submit', function(event){
+            alert("Form Submitted");
+
+            const fullname = document.getElementById('fullname').value;
+            const email = document.getElementById('email').value;
+            const pass = document.getElementById('pass').value;
+            const age = document.getElementById('age').value;
+
+            if (!fullname) {
+                alert("You need to enter your name.");
+            }
+
+            if (!age || age<18) {
+                alert("You need to be 18");
+                return;
+            }
+
+             const formDate = {
+                fullname: fullname,
+                email: email,
+                password: pass
+            }
+            
+            console.log(fullname);
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET", "submit.json", true);
+            xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+            xhr.onreadystatechange = function () {
+                if (hxr.readyState == 4 && xhr.state === 200) {
+                    alert('Form submitted successfully.');
+                } else if (xhr.readyState === 4) {
+                    alert('Error submitting form.')
+                }
+            };
+            xhr.send(JSON.stringify(formData))
+        });
+    </script>
+
+</body>
+</html>
