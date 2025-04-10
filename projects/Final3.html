@@ -25,20 +25,62 @@
             <h2>We value your Feedback</h2>
             <form action="#" method="post">
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" placeholder="Full name..." required>
                 <br>
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-
+                <input type="email" id="email" name="email" placeholder="Your email..." required>
+                <br>
+                <label for="item">Photo Purchased or Service Requested:</label>
+                <input type="text" id="item" name="item">
+                <br>
+                <label for="quality-rating">Photo Quality Rating (1-5):</label>
+                <input type="number" id="quality-rating" name="quality-rating" min="1" max="5" required>
+                <br>
+                <label for="satisfaction-rating">Overall Satisfaction Rating (1-5):</label>
+                <input type="number" id="satisfaction-rating" name="satisfaction-rating" min="1" max="5" required>
+                <br>
+                <label for="comments">Comments:</label>
+                <textarea name="comments" id="comments" rows="4" cols="50" placeholder="Your feadback here.."></textarea>
+                <br>
+                <button type="submit">Submit Survey</button>
             </form>
-
-
-
         </section>
-
+        <section class="survey-results">
+        <h2>Survey Results</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Submission ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Quality Rating</th>
+                    <th>Satisfaction Rating</th>
+                    <th>Comments</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>Jake</td>
+                    <td>Jake@gmail.com</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>Excellent quality!</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Mark</td>
+                    <td>Mark@gmail.com</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>Loved the service.</td>
+                </tr>
+            </tbody>
+        </table>
+        </section>
     </main>
     <footer>
-
+        <p>&copy;2025 Takuto Yamashiro</p>
     </footer>
 </body>
 </html>
