@@ -20,7 +20,7 @@ header {
 }
 
 header h1 {
-    font-size: none;
+    font-size: 2em;
     margin-bottom: 10px;
     border: 9px solid;
 }
@@ -145,7 +145,7 @@ th, td {
 
 .ad-banner img {
     max-width: 100%;
-    height: suto;
+    height: auto;
 }
 
 footer {
@@ -288,15 +288,6 @@ figcaption {
 
 iframe {
     border-radius: 8px;
-}
-
-.ad-banner1 {
-    
-}
-
-.ad-banner2 {
-    
-    
 }
 
 .video {
